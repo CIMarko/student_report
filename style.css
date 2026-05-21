@@ -1,0 +1,24 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eceff1; padding: 20px; color: #333; }
+.container { max-width: 1100px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+/* Instructions & Legend */
+.instructions { background: #f8f9fa; border-left: 5px solid #007bff; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+.instructions h3 { margin-top: 0; font-size: 1.1rem; }
+.legend { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; font-size: 0.9rem; }
+.status-box.red { width: 20px; height: 20px; background-color: #ff4d4d; border-radius: 3px; }
+
+.upload-section { margin: 30px 0; padding: 40px; border: 2px dashed #007bff; border-radius: 8px; text-align: center; background: #f0f7ff; }
+.action-bar { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9rem; }
+th, td { border: 1px solid #dee2e6; padding: 12px; text-align: left; }
+th { background-color: #007bff; color: white; }
+tr:nth-child(even) { background-color: #f8f9fa; }
+
+/* The Red Highlight Rule */
+.inactive { background-color: #ff4d4d !important; color: white; font-weight: bold; }
+
+button { padding: 12px 24px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 6px; font-weight: bold; transition: 0.2s; }
+button:hover { background: #0056b3; }
+.secondary-btn { background: #28a745; }
+.secondary-btn:hover { background: #218838; }

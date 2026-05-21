@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Reporter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Report Processor</h1>
+            <div class="instructions">
+                <h3>How to use:</h3>
+                <ol>
+                    <li>Export your <strong>Cypher Raw Data</strong> as a .csv file.</li>
+                    <li>Click "Choose File" and select that export.</li>
+                    <li>Click <strong>Run Report</strong> to process the data.</li>
+                </ol>
+            </div>
+            
+            <div class="legend">
+                <span class="status-box red"></span> 
+                <p><strong>Concern:</strong> Students inactive for more than 10 days.</p>
+            </div>
+        </header>
+        
+        <div class="upload-section">
+            <input type="file" id="csvFile" accept=".csv" />
+            <button id="processBtn">Run Report</button>
+        </div>
+
+        <div id="resultArea" style="display:none;">
+            <div class="action-bar">
+                <h2>Generated Report</h2>
+                <button id="downloadBtn" class="secondary-btn">Download CSV</button>
+            </div>
+            <div class="table-wrapper">
+                <table id="reportTable">
+                    <thead><tr id="tableHeader"></tr></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
